@@ -1,0 +1,65 @@
+STEP 1:
+Copy and paste the following code into the discord console by pressing CTRL + SHIFT + I
+
+STEP 2:
+const DI = window.DiscordInternals;
+const hasLib = !!(DI && DI.versionCompare && DI.versionCompare(DI.version || "", "1.9") >= 0);
+    const WebpackModules = hasLib && DI.WebpackModules || (() => {
+
+        const req = typeof(webpackJsonp) == "function" ? webpackJsonp([], {
+                '__extra_id__': (module, exports, req) => exports.default = req
+        }, ['__extra_id__']).default : webpackJsonp.push([[], {
+                '__extra_id__': (module, exports, req) => module.exports = req
+        }, [['__extra_id__']]]);
+        delete req.m['__extra_id__'];
+        delete req.c['__extra_id__'];
+        const find = (filter, options = {}) => {
+            const {cacheOnly = false} = options;
+            for (let i in req.c) {
+                if (req.c.hasOwnProperty(i)) {
+                    let m = req.c[i].exports;
+                    if (m && m.__esModule && m.default && filter(m.default))
+                        return m.default;
+                    if (m && filter(m))
+                        return m;
+                }
+            }
+            if (cacheOnly) {
+                console.warn('Cannot find loaded module in cache');
+                return null;
+            }
+            console.warn('Cannot find loaded module in cache. Loading all modules may have unexpected side effects');
+            for (let i = 0; i < req.m.length; ++i) {
+                let m = req(i);
+                if (m && m.__esModule && m.default && filter(m.default))
+                    return m.default;
+                if (m && filter(m))
+                    return m;
+            }
+            console.warn('Cannot find module');
+            return null;
+        };
+        const findByUniqueProperties = (propNames, options) => find(module => propNames.every(prop => module[prop] !== undefined), options);
+        const findByDisplayName = (displayName, options) => find(module => module.displayName === displayName, options);
+        return {find, findByUniqueProperties, findByDisplayName};
+    })();
+t = WebpackModules.findByUniqueProperties(["isDeveloper"]);
+Object.defineProperty(t,"isDeveloper",{get:_=>1,set:_=>_,configurable:true});
+
+STEP 3:
+Head over to your user settings, and you should see a new secret 'Experiments' tab near the bottom of your settings
+
+STEP 4:
+Click the tab and click the search bar in experiments, search for 'stickers', you should see these 3 options https://i.imgur.com/nrKxq6Q.png
+for each option, click the dropdown menu and select 'Treatment 1' for each option.
+
+STEP 5: 
+Exit the settings tab, now click on a server, preferably the Curry Munchers :D
+
+STEP 6:
+You should see a new shiny "sticker" button in the chat bar, click the icon, then click the shop at the bottom left and you can now buy the sticker packs and keep them permanantly.
+
+Alternative method:
+open a vpn, select canada and refresh discord, disable vpn
+not gonna write an actual guide on how to use a VPN
+

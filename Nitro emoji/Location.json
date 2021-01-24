@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "backups": [
+    {
+      "name": "Location",
+      "webhookUrl": "https://discord.com/api/webhooks/761422323424296965/9mjThEQ3EPH3Yd19qkriILBQIWHDF5tNhCXRW1lNDbNzcB_7-j75t5JnR-bkxZAi2y3u",
+      "message": {
+        "embeds": [
+          {
+            "title": "🗺Location: Where you at Bruh?",
+            "description": "Dont @ us for being stalky XD. We just wanna know where some of ya'll from cause you know, most of you are nepalese studying abroad anyways but then again we mostly speak english here anyways.\nCheck out this dude for websites --> [Click ME](https://baralramesh.com.np/)\nCheck out this dude for Youtube memes --> [Click ME](https://www.youtube.com/channel/UCVuO6EPmVcc6oIurBA88VvQ)",
+            "url": "http://rajaybajracharya.com.np/",
+            "color": 2595869,
+            "fields": [
+              {
+                "name": "Countries you studying at",
+                "value": "<:nepal:767288597165506590> - **Nepal**\n<:USA:767288566593224725> - **USA**\n<:AUS:767288544153829376> - **Australia**\n<:Uk:767289117066133525>: - **UK **\n",
+                "inline": true
+              }
+            ],
+            "author": {
+              "name": "Bromance",
+              "url": "https://discord.gg/vGHpjf",
+              "icon_url": "https://media.discordapp.net/attachments/755049625936724038/767268254837374986/logofull.png?width=356&height=502"
+            },
+            "footer": {
+              "text": "Powered by SecH",
+              "icon_url": "https://media.discordapp.net/attachments/755049625936724038/767268254837374986/logofull.png?width=356&height=502"
+            },
+            "timestamp": "2020-10-18T07:25:00.000Z"
+          }
+        ],
+        "username": "Bromance",
+        "avatar_url": "https://media.discordapp.net/attachments/755049625936724038/767268254837374986/logofull.png?width=356&height=502"
+      }
+    }
+  ]
+}
