@@ -1,5 +1,5 @@
 # yagpdb-cc-
-<b/>Contents </b>
+<h2/><b/>Contents </b></h2>
 
 <b/><i/>FUN</i> </b>
 1) Welcome Image when a new user Joins. 
