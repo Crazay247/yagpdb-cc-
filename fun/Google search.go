@@ -22,4 +22,7 @@ https://www.facebook.com/search/top?q={{urlquery (joinStr " " .CmdArgs)}}
 https://twitter.com/search?q={{urlquery (joinStr " " .CmdArgs)}}&src=typed_query&f=user
 {{else if reFind "quora|q" .Cmd }}
 https://www.quora.com/search?q={{urlescape (joinStr " " .CmdArgs)}}
+{{else if reFind "reddit|r" .Cmd }}
+https://www.reddit.com/r/{{urlescape (joinStr " " .CmdArgs)}}
 {{end}}
+
