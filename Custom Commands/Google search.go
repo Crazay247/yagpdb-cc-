@@ -1,3 +1,13 @@
+{{/*
+	Trigger : ^-(google|youtube|porn|insta|facebook|i|ph|g|y|fb|twitter|t|quora|q)
+	Trigger Type : Regex
+	Made by Rockefeller street
+#9307
+	
+	
+	
+	*/}}
+
 {{if reFind "google|g" .Cmd}}
 https://www.google.com/search?q={{urlquery (joinStr " " .CmdArgs)}}
 {{else if  reFind "youtube|y" .Cmd }}
