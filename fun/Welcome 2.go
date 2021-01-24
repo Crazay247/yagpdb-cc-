@@ -9,10 +9,17 @@
 	*/}}
 
 
-	{{ $username := .User.Username}}
+		{{ $username := .User.Username}}
 	{{ $avatar := .User.AvatarURL "256"}}
 	{{ $message := "Welcome+to+server+name"}}
-	{{ $background := "https://cdn.discordapp.com/attachments/755600572215722035/799132031610650684/Welcome_4.png"}}
+		{{ $a := "https://cdn.discordapp.com/attachments/755600572215722035/802895828225884190/Welcome_7.png"}}
+		{{ $b := "https://cdn.discordapp.com/attachments/755600572215722035/799132031610650684/Welcome_4.png"}}
+		{{ $d := "https://cdn.discordapp.com/attachments/614131951200370710/802898525674799114/5.png"}}
+		{{ $e := "https://cdn.discordapp.com/attachments/614131951200370710/802898531388096512/3.png"}}
+		{{ $f := "https://cdn.discordapp.com/attachments/614131951200370710/802898546789056512/4.png"}}
+		{{ $c := ( cslice $a $b $d $e $f ) }}
+		{{ $background := index $c (len $c|randInt)}}
+
 	{{ $color := "black"}}
 	{{ $humanage := currentUserAgeHuman}}
 	{{ $advice := (execAdmin "advice") }}
@@ -25,7 +32,7 @@
 	$message 
 		"&background=" $background 
 		"&color=" $color
-		"&text_heading=" (urlquery (print "Welcome to " .Server.Name "!" ))}}
+		"&text_heading=" (urlquery (print "Welcome to " .Server.Name "!" )) }}
 	{{$embed := cembed
 		"title" "<a:bluefire:785420344072601600>A New Comrade Appears!<a:bluefire:785420344072601600>"
 		"color" (randInt 0 8645612) 
@@ -36,7 +43,7 @@
 			(sdict "name" " <a:furrydance:785377918682660886> Member Count" "value" (toString .Guild.MemberCount) "inline" true) 
 			
 		) 
-		"author" (sdict "name" " 🔥Server Salute!🔥 " "icon_url" "https://media.discordapp.net/attachments/755600572215722035/801474613535178752/logofull.png") 
+		"author" (sdict "name" " 🔥Bromance Salute!🔥 " "icon_url" "https://media.discordapp.net/attachments/755600572215722035/801474613535178752/logofull.png") 
 		"image" (sdict "url" $url)
 		"timestamp" .Guild.JoinedAt
 	}}
