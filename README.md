@@ -3,6 +3,10 @@
 
 <b/><i/>FUN</i> </b>
 1) Welcome Image when a new user Joins. 
+![Image of Yaktocat](https://cdn.discordapp.com/attachments/755600572215722035/802900481197604884/unknown.png)
+
+
+
 2) Google/Youtube/Facebook Search engine command
 3) meme
 4) Disboard Bump </n>
