@@ -1,3 +1,14 @@
+	{{/*
+	Trigger : When Someone Joins or Leaves
+	Trigger Type : Welcome Message
+	Made by Rockefeller street
+#9307
+	
+	
+	
+	*/}}
+
+
 	{{ $username := .User.Username}}
 	{{ $avatar := .User.AvatarURL "256"}}
 	{{ $message := "Welcome+to+server+name"}}
@@ -25,7 +36,7 @@
 			(sdict "name" " <a:furrydance:785377918682660886> Member Count" "value" (toString .Guild.MemberCount) "inline" true) 
 			
 		) 
-		"author" (sdict "name" " 🔥Bromance Salute!🔥 " "icon_url" "https://media.discordapp.net/attachments/755600572215722035/801474613535178752/logofull.png") 
+		"author" (sdict "name" " 🔥Server Salute!🔥 " "icon_url" "https://media.discordapp.net/attachments/755600572215722035/801474613535178752/logofull.png") 
 		"image" (sdict "url" $url)
 		"timestamp" .Guild.JoinedAt
 	}}
