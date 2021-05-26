@@ -8,8 +8,9 @@
 
 
 2) Google/Youtube/Facebook Search engine command
-3) meme
-4) Disboard Bump </n>
+![image of Yaktocat].(https://i.imgur.com/VAOmk18.png)
+4) meme
+5) Disboard Bump </n>
 
 <b/> <i/>Nitro Emoji</i></b>
 
