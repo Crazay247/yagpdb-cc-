@@ -8,7 +8,7 @@
 
 
 2) Google/Youtube/Facebook Search engine command
-![image of Yaktocat].(https://i.imgur.com/VAOmk18.png)
+![Image of Yaktocat](https://i.imgur.com/VAOmk18.png)
 4) meme
 5) Disboard Bump </n>
 
